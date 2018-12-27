@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+main {
+	padding-top: 50px;
+}
+.row {
+	padding-right: 20px;
+	padding-left: 20px; 
+	margin-bottom: 20px;
+	max-width: 1000px; 
+}
+.box {
+	text-align: center; 
+	height: 150px;
+	padding: 20px;
+}
+.purple {
+	background-color: purple;
+}
+.red {
+	background-color: red; 
+}
+.orange {
+	background-color: orange; 
+}
+.yellow {
+	background-color: yellow; 
+}
+.row::before,
+.row::after {
+	display: table;
+	content: '';
+}
+.row::after {
+	clear: both;
+}
+.col-3, .col-4, .col-6, .col-12 {
+	float: left;
+	padding-left: 1.04166666%;
+  	padding-right: 1.04166666%; 
+  	width: 100%; 
+}
+@media only screen and (min-width: 640px) {
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%; 
+	}
+	.col-6 {
+		width: 50%; 
+	}
+	.col-12 {
+		width: 100%; 
+	}
+}
